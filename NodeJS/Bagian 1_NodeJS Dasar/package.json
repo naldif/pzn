@@ -1,0 +1,15 @@
+{
+  "name": "bagian-1_nodejs-dasar",
+  "version": "1.0.0",
+  "description": "Belajar Node",
+  "main": "async.js",
+  "scripts": {
+    "start": "hello-world.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nito",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
