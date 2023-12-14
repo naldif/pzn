@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Bubble</title>
+</head>
+<body>
+    <script>
+
+        function bubbleSort(arr) {
+            let len = arr.length;
+            // for (var i = 0; i < len; i++) {
+            //     for (var j = 0; j < len - 1; j++) {
+            //         if (arr[j] > arr[j + 1]) {
+            //             // Swap
+            //             var temp = arr[j];
+            //             arr[j] = arr[j + 1];
+            //             arr[j + 1] = temp;
+            //         }
+            //     }
+            // }
+
+            for (let i = 0; i < len; i++) {
+                for (let j = i + 1; j < len; j++) {
+                    if (arr[i] > arr[j]) {
+                        // Swap values
+                        let temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+            return arr;
+        }
+
+        // Contoh penggunaan
+        var myArray = [5, 8, 2, 1, 4];
+        document.write("<font face='arial' size='4'>SEBELUM DI URUTKAN </font>");
+        document.write("<font face='arial' size='4'>.");
+        document.write("<br><br>");
+        document.write(`${myArray}`);    
+        document.write("</font>");
+        document.write("<br><br>");
+
+        document.write("<font face='arial' size='4'>SETELAH DI URUTKAN </font>");
+        document.write("<font face='arial' size='4'>.");
+        document.write("<br><br>");
+        var sortedArray = bubbleSort(myArray);
+        document.write(`${sortedArray}`);  
+        document.write("</font>");
+
+        // var myArray = [5, 3, 8, 2, 1, 4];
+        // var z = [];
+        // for (let i = 0; i < myArray.length; i++) {
+        //     z.push(myArray[i]);
+        // }
+
+        // z.sort(function(a, b) {
+        //     return a - b;
+        // });
+
+        // document.write(`${z}`);  
+
+
+
+    </script>
+</body>
+</html>
