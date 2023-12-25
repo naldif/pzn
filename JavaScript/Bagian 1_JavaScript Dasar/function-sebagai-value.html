@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funtion sebagai Value</title>
+</head>
+<body>
+    <script>
+        
+        function sayHello(name) {
+            document.writeln(`<p>Hello ${name}</p>`)
+        }
+        sayHello("Nito")
+
+        const say = sayHello;
+        say("Budi");
+
+        function giveMeName(callback) {
+            callback("Nitos"); //sayHello("Nito");
+        }
+        giveMeName(sayHello)
+        giveMeName(say) //giveMeName(sayHello);
+    </script>
+</body>
+</html>
